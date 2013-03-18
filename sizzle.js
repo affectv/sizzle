@@ -1904,11 +1904,14 @@ setDocument();
 support.detectDuplicates = hasDuplicate;
 
 // EXPOSE
+window.Sizzle = Sizzle;
+/*
 if ( typeof define === "function" && define.amd ) {
 	define(function() { return Sizzle; });
 } else {
 	window.Sizzle = Sizzle;
 }
+*/
 // EXPOSE
 
 })( window );
